@@ -13,7 +13,7 @@ export function LoadingScreen({ onComplete }: { onComplete?: () => void }) {
     setMounted(true)
     let current = 0
     const interval = setInterval(() => {
-      current += Math.floor(Math.random() * 4) + 1
+      current += Math.floor(Math.random() * 15) + 15
       if (current >= 100) {
         current = 100
         clearInterval(interval)
@@ -23,11 +23,11 @@ export function LoadingScreen({ onComplete }: { onComplete?: () => void }) {
           setTimeout(() => {
             setDone(true)
             onComplete?.()
-          }, 800)
-        }, 700)
+          }, 300)
+        }, 300)
       }
       setCount(current)
-    }, 60)
+    }, 20)
     return () => clearInterval(interval)
   }, [onComplete])
 

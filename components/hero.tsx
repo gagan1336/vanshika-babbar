@@ -24,7 +24,7 @@ export function Hero({ ready }: { ready: boolean }) {
         style={{ scale: imageScale, y: imageY }}
         initial={{ scale: 1.08, opacity: 0 }}
         animate={ready ? { scale: 1, opacity: 1 } : {}}
-        transition={{ duration: 2.4, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
       >
         <video
           src="/videos/hero-video.mp4"
@@ -51,7 +51,7 @@ export function Hero({ ready }: { ready: boolean }) {
       <motion.div
         initial={{ opacity: 0 }}
         animate={ready ? { opacity: 1 } : {}}
-        transition={{ delay: 2.2, duration: 2.5 }}
+        transition={{ delay: 0.5, duration: 1.5 }}
         className="absolute inset-0"
         style={{
           background: 'radial-gradient(ellipse 50% 70% at 15% 50%, rgba(180,155,110,0.12), transparent)',
@@ -62,7 +62,7 @@ export function Hero({ ready }: { ready: boolean }) {
       <motion.div
         initial={{ opacity: 0, y: 30, scale: 0.96 }}
         animate={ready ? { opacity: 1, y: 0, scale: 1 } : {}}
-        transition={{ duration: 1.6, delay: 2, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 1.0, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className="absolute right-6 top-28 z-20 hidden overflow-hidden border border-ivory/10 shadow-2xl lg:block"
         style={{ width: '220px' }}
       >
@@ -90,7 +90,7 @@ export function Hero({ ready }: { ready: boolean }) {
         <motion.span
           initial={{ opacity: 0, x: -20 }}
           animate={ready ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1.2, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 1.0, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="mb-8 flex items-center gap-5 text-[10px] uppercase tracking-luxe letter-spacing-hover text-gold"
         >
           <span className="inline-block h-px w-10 bg-gold/50" />
@@ -105,7 +105,7 @@ export function Hero({ ready }: { ready: boolean }) {
               className="block text-[15vw] sm:text-[11vw] lg:text-[8.5vw]"
               initial={{ y: '120%' }}
               animate={ready ? { y: '0%' } : {}}
-              transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.9 }}
+              transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
             >
               Where Fabric
             </motion.span>
@@ -115,7 +115,7 @@ export function Hero({ ready }: { ready: boolean }) {
               className="block text-[15vw] italic shimmer-text sm:text-[11vw] lg:text-[8.5vw]"
               initial={{ y: '120%' }}
               animate={ready ? { y: '0%' } : {}}
-              transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 1.15 }}
+              transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
             >
               Meets Fate.
             </motion.span>
@@ -127,7 +127,7 @@ export function Hero({ ready }: { ready: boolean }) {
           <motion.div
             initial={{ opacity: 0 }}
             animate={ready ? { opacity: 1 } : {}}
-            transition={{ duration: 1.4, delay: 1.6 }}
+            transition={{ duration: 1.0, delay: 0.6 }}
             className="max-w-lg"
           >
             <p className="text-[13px] leading-[1.85] text-ivory/55 sm:text-[14px]">
@@ -147,7 +147,7 @@ export function Hero({ ready }: { ready: boolean }) {
           <motion.button
             initial={{ opacity: 0, y: 20 }}
             animate={ready ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 1, delay: 1.9 }}
+            transition={{ duration: 1, delay: 0.8 }}
             onClick={() => scrollToId('consultation')}
             data-cursor="Book"
             className="group relative inline-flex items-center gap-5 overflow-hidden border border-ivory/20 px-10 py-5 text-[10px] uppercase tracking-luxe text-ivory transition-all duration-700 hover:border-gold"
@@ -169,7 +169,7 @@ export function Hero({ ready }: { ready: boolean }) {
         initial={{ opacity: 0 }}
         animate={ready ? { opacity: 1 } : {}}
         style={{ opacity: badgeOpacity }}
-        transition={{ delay: 2.5, duration: 1 }}
+        transition={{ delay: 1.0, duration: 1 }}
         className="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-3"
       >
         <span className="text-[8px] uppercase tracking-luxe text-ivory/35">Discover</span>
@@ -184,7 +184,7 @@ export function Hero({ ready }: { ready: boolean }) {
       <motion.div
         initial={{ opacity: 0 }}
         animate={ready ? { opacity: 1 } : {}}
-        transition={{ delay: 2.8, duration: 1.2 }}
+        transition={{ delay: 1.2, duration: 1.2 }}
         className="absolute left-6 top-1/2 z-10 hidden -translate-y-1/2 xl:block"
       >
         <div className="flex -rotate-90 items-center gap-4 text-[7px] uppercase tracking-luxe text-ivory/20">
@@ -197,7 +197,7 @@ export function Hero({ ready }: { ready: boolean }) {
       <motion.div
         initial={{ opacity: 0 }}
         animate={ready ? { opacity: 1 } : {}}
-        transition={{ delay: 2.8, duration: 1.2 }}
+        transition={{ delay: 1.2, duration: 1.2 }}
         className="absolute right-6 top-1/2 z-10 hidden -translate-y-1/2 xl:block"
       >
         <div className="flex rotate-90 items-center gap-4 font-sans text-[7px] uppercase tracking-luxe text-ivory/20">
