@@ -19,17 +19,22 @@ export function Hero({ ready }: { ready: boolean }) {
   return (
     <section id="top" ref={ref} className="relative h-[100svh] w-full overflow-hidden bg-ink">
       {/* Primary background — HD video provided by user */}
-      <motion.div className="absolute inset-0" style={{ scale: imageScale, y: imageY }}>
-        <motion.video
+      <motion.div
+        className="absolute inset-0"
+        style={{ scale: imageScale, y: imageY }}
+        initial={{ scale: 1.08, opacity: 0 }}
+        animate={ready ? { scale: 1, opacity: 1 } : {}}
+        transition={{ duration: 2.4, ease: [0.22, 1, 0.36, 1] }}
+      >
+        <video
           src="/videos/hero-video.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
+          autoPlay={true}
+          loop={true}
+          muted={true}
+          playsInline={true}
+          preload="auto"
+          poster="/images/hd-4.jpg"
           className="h-full w-full object-cover object-center"
-          initial={{ scale: 1.08, opacity: 0 }}
-          animate={ready ? { scale: 1, opacity: 1 } : {}}
-          transition={{ duration: 2.4, ease: [0.22, 1, 0.36, 1] }}
         />
       </motion.div>
 
