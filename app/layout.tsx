@@ -22,23 +22,6 @@ export const metadata: Metadata = {
   title: 'Vanshika Babbar — Bespoke Tailor · Dubai',
   description:
     'A private bespoke tailoring atelier in Dubai. Handcrafted suits born of consultation, artistry, and uncompromising craftsmanship. Book your private appointment.',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
 }
 
 export const viewport: Viewport = {
