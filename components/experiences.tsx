@@ -19,21 +19,21 @@ const TESTIMONIALS = [
   {
     quote:
       'I have worn Savile Row, I have worn Naples. Nothing has fit the way Vanshika constructs a jacket. She understands the body the way an architect understands space.',
-    name: 'A private client',
+    name: 'H. A.',
     place: 'Dubai · Business Suit Commission',
-    initial: 'A',
+    initial: 'H',
   },
   {
     quote:
       'The fitting felt like sculpture. By the third session, I understood I was not buying a suit — I was investing in a second skin that would outlast every trend.',
-    name: 'A private client',
+    name: 'S. R.',
     place: 'London · Wedding Suit',
-    initial: 'L',
+    initial: 'S',
   },
   {
     quote:
       'She asked me how I sit, how I gesture, which pocket my phone lives in. That attention is what separates craft from couture.',
-    name: 'A private client',
+    name: 'M. K.',
     place: 'Mumbai · Wardrobe Commission',
     initial: 'M',
   },
@@ -66,10 +66,15 @@ export function Experiences() {
 
       <div className="mx-auto max-w-[1600px] px-6 sm:px-10">
         <div className="max-w-2xl">
-          <span className="flex items-center gap-3 text-[10px] uppercase tracking-luxe text-gold">
-            <span className="inline-block h-px w-6 bg-gold/40" />
-            Client Testimonials
-          </span>
+          <div className="flex flex-col gap-2">
+            <span className="flex items-center gap-3 text-[10px] uppercase tracking-luxe text-gold">
+              <span className="inline-block h-px w-6 bg-gold/40" />
+              06 / The Patrons
+            </span>
+            <span className="pl-9 text-[6.5px] uppercase tracking-wide-luxe text-ivory/30">
+              Words from our clientele
+            </span>
+          </div>
           <RevealHeading
             text="Trusted by gentlemen who demand the exceptional."
             className="mt-8 font-serif text-4xl font-light leading-[1.05] text-ivory sm:text-5xl md:text-[3.5rem]"

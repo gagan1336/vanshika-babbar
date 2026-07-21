@@ -63,7 +63,6 @@ export function Consultation() {
               <div className="mt-14 space-y-8 border-t border-ink/8 pt-12">
                 <Detail label="The Atelier" value="DIFC, Dubai, UAE" />
                 <Detail label="By Appointment" value="atelier@vanshikababbar.com" />
-                <Detail label="Direct Line" value="+971 4 XXX XXXX" />
                 <Detail label="Hours" value="By private appointment only" />
               </div>
             </FadeIn>

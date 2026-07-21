@@ -68,7 +68,6 @@ export function SiteFooter() {
             <ul className="mt-6 space-y-4 text-[13px] text-ivory/55">
               <li>DIFC, Dubai, UAE</li>
               <li>atelier@vanshikababbar.com</li>
-              <li>+971 4 XXX XXXX</li>
             </ul>
           </div>
           <div>
