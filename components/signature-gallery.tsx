@@ -54,10 +54,15 @@ export function SignatureGallery() {
         {/* Header */}
         <div className="mx-auto flex w-full max-w-[1600px] items-end justify-between px-6 pb-8 pt-28 sm:px-10">
           <div>
-            <span className="flex items-center gap-3 text-[10px] uppercase tracking-luxe text-gold">
-              <span className="inline-block h-px w-6 bg-gold/40" />
-              Signature Creations
-            </span>
+            <div className="flex flex-col gap-2">
+              <span className="flex items-center gap-3 text-[10px] uppercase tracking-luxe text-gold">
+                <span className="inline-block h-px w-6 bg-gold/40" />
+                02 / The Archive
+              </span>
+              <span className="pl-9 text-[6.5px] uppercase tracking-wide-luxe text-ivory/30">
+                Curated commissions & signature cuts
+              </span>
+            </div>
             <RevealHeading
               text="An archive of the singular."
               className="mt-6 font-serif text-4xl font-light leading-none text-ivory sm:text-5xl md:text-[3.5rem]"

@@ -25,11 +25,16 @@ export function Consultation() {
       <div className="mx-auto max-w-[1600px] px-6 sm:px-10">
         <div className="grid grid-cols-1 gap-20 lg:grid-cols-2 lg:gap-0">
           {/* Left — Info + Image */}
-          <div className="lg:pr-16">
-            <span className="flex items-center gap-3 text-[10px] uppercase tracking-luxe text-gold">
-              <span className="inline-block h-px w-6 bg-gold/50" />
-              By Appointment Only
-            </span>
+          <div className="flex flex-col justify-between lg:pr-16">
+            <div className="flex flex-col gap-2">
+              <span className="flex items-center gap-3 text-[10px] uppercase tracking-luxe text-gold">
+                <span className="inline-block h-px w-6 bg-gold/50" />
+                05 / Consultation
+              </span>
+              <span className="pl-9 text-[6.5px] uppercase tracking-wide-luxe text-muted-foreground">
+                By Appointment Only
+              </span>
+            </div>
             <RevealHeading
               text="Begin your bespoke journey."
               className="mt-8 font-serif text-5xl font-light leading-[1] text-ink sm:text-6xl md:text-[4rem]"

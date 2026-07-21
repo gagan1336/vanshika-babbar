@@ -70,10 +70,15 @@ export function BespokeJourney() {
     <section id="journey" ref={container} className="relative bg-ivory">
       {/* Section header */}
       <div className="mx-auto max-w-[1600px] px-6 pt-28 sm:px-10 md:pt-44">
-        <span className="flex items-center gap-3 text-[10px] uppercase tracking-luxe text-gold">
-          <span className="inline-block h-px w-6 bg-gold/50" />
-          The Bespoke Journey
-        </span>
+        <div className="flex flex-col gap-2">
+          <span className="flex items-center gap-3 text-[10px] uppercase tracking-luxe text-gold">
+            <span className="inline-block h-px w-6 bg-gold/50" />
+            04 / The Journey
+          </span>
+          <span className="pl-9 text-[6.5px] uppercase tracking-wide-luxe text-muted-foreground">
+            Six chapters to completion
+          </span>
+        </div>
         <h2 className="mt-8 max-w-4xl font-serif text-4xl font-light leading-[1.05] text-ink sm:text-5xl md:text-[3.5rem]">
           Six chapters, from the first handshake to the final stitch.
         </h2>

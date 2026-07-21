@@ -90,9 +90,15 @@ export function SiteFooter() {
         </div>
 
         {/* Bottom bar */}
-        <div className="flex flex-col gap-4 border-t border-ivory/8 pt-8 text-[9px] uppercase tracking-luxe text-ivory/25 sm:flex-row sm:items-center sm:justify-between">
-          <span>© {new Date().getFullYear()} Vanshika Babbar Bespoke. All rights reserved.</span>
+        <div className="flex flex-col gap-4 border-t border-ivory/8 pt-8 text-[8px] uppercase tracking-wide-luxe text-ivory/25 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-4">
+            <span>© {new Date().getFullYear()} Vanshika Babbar Bespoke.</span>
+            <span className="h-3 w-px bg-ivory/10" />
+            <span>Registered Trademark</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <span>Dubai, United Arab Emirates</span>
+            <span className="h-3 w-px bg-ivory/10" />
             <span>Handcrafted, never repeated.</span>
             <span className="h-3 w-px bg-ivory/10" />
             <span className="text-gold/30">✦</span>

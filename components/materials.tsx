@@ -48,10 +48,15 @@ export function Materials() {
         {/* Header */}
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
           <div>
-            <span className="flex items-center gap-3 text-[10px] uppercase tracking-luxe text-gold">
-              <span className="inline-block h-px w-6 bg-gold/40" />
-              Materials & Provenance
-            </span>
+            <div className="flex flex-col gap-2">
+              <span className="flex items-center gap-3 text-[10px] uppercase tracking-luxe text-gold">
+                <span className="inline-block h-px w-6 bg-gold/40" />
+                03 / Provenance
+              </span>
+              <span className="pl-9 text-[6.5px] uppercase tracking-wide-luxe text-ivory/30">
+                Sourcing the world's finest cloth
+              </span>
+            </div>
             <RevealHeading
               text="We begin where the world's finest looms end."
               className="mt-8 font-serif text-4xl font-light leading-[1.05] text-ivory sm:text-5xl md:text-[3.5rem]"

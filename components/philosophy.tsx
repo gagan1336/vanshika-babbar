@@ -62,10 +62,15 @@ export function Philosophy() {
           {/* Left column — Text */}
           <div className="lg:col-span-5">
             <FadeIn>
-              <span className="flex items-center gap-3 text-[10px] uppercase tracking-luxe text-gold">
-                <span className="inline-block h-px w-6 bg-gold/50" />
-                The Philosophy
-              </span>
+              <div className="flex flex-col gap-2">
+                <span className="flex items-center gap-3 text-[10px] uppercase tracking-luxe text-gold">
+                  <span className="inline-block h-px w-6 bg-gold/50" />
+                  01 / Manifesto
+                </span>
+                <span className="pl-9 text-[6.5px] uppercase tracking-wide-luxe text-muted-foreground">
+                  Documenting the atelier ethos
+                </span>
+              </div>
             </FadeIn>
 
             <RevealHeading
