@@ -72,6 +72,13 @@ export function Hero({ ready }: { ready: boolean }) {
           className="h-auto w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent" />
+        
+        {/* Technical Metadata overlay */}
+        <div className="absolute bottom-3 left-3 flex flex-col gap-1 text-[6.5px] uppercase tracking-wide-luxe text-ivory/60">
+          <span>Ref: VBB-001</span>
+          <span>Cloth: Dormeuil</span>
+          <span>Weave: Sharkskin</span>
+        </div>
       </motion.div>
 
       {/* Content */}
@@ -183,6 +190,19 @@ export function Hero({ ready }: { ready: boolean }) {
         <div className="flex -rotate-90 items-center gap-4 text-[7px] uppercase tracking-luxe text-ivory/20">
           <span className="inline-block h-px w-14 bg-ivory/10" />
           Est. MMIX · Dubai
+        </div>
+      </motion.div>
+
+      {/* Vertical side badge — right (Coordinates) */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={ready ? { opacity: 1 } : {}}
+        transition={{ delay: 2.8, duration: 1.2 }}
+        className="absolute right-6 top-1/2 z-10 hidden -translate-y-1/2 xl:block"
+      >
+        <div className="flex rotate-90 items-center gap-4 font-sans text-[7px] uppercase tracking-luxe text-ivory/20">
+          25°12'17"N 55°16'28"E
+          <span className="inline-block h-px w-14 bg-ivory/10" />
         </div>
       </motion.div>
     </section>
